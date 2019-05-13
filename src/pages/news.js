@@ -1,20 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const NewsPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`art`, `painting`, `gallery`]} />
+    <SEO title="News" keywords={[`news`, `art`, `painting`]} />
     <h1>Hi people</h1>
-    <p>Welcome to my new portfolio.</p>
-    <p>Now go build something great.</p>
+    <p>Welcome to my news</p>
+    <p>...</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
   </Layout>
 )
 
-export default IndexPage
+export default NewsPage
