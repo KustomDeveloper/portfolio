@@ -9,7 +9,7 @@ const ContactPage = () => (
     <SEO title="Contact Me" keywords={[`news`, `art`, `painting`]} />
     <h1>Hi people</h1>
     <p>Welcome to my contact page</p>
-    <p>...</p>
+    <p></p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

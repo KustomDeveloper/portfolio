@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Headless Wordpress CMS",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Michael Hicks <kustomdesigner@gmail.com>",
   "dependencies": {
     "gatsby": "^2.3.31",
     "gatsby-image": "^2.0.40",
@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-source-filesystem": "^2.0.32",
+    "gatsby-source-wordpress": "^3.0.61",
     "gatsby-transformer-sharp": "^2.1.18",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -19,6 +20,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "env-cmd": "^9.0.1",
     "prettier": "^1.17.0"
   },
   "keywords": [
@@ -27,7 +29,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd .env.development gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
